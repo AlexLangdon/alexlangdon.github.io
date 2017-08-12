@@ -1,9 +1,9 @@
  <!--Background pattern from Subtle Patterns -->
 <div class="bg">
 </div>
-<md-card class="nav-banner">
-  <div class="nav-banner-content">
-    <img class="logo" src="../assets/logo.png">
+<md-card class="header">
+  <content class="header-content">
+    <img class="logo" src="../assets/images/logo.png">
     <button md-raised-button>
       Home
       <md-icon>home</md-icon>
@@ -16,17 +16,33 @@
       Academic
       <md-icon>school</md-icon>
     </button>
+    <button md-raised-button>
+      CV
+      <md-icon>description</md-icon>
+    </button>
     <a md-button href="http://uk.linkedin.com/pub/alex-langdon/a5/628/82b">
       <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" 
           class="linked-in-button" alt="View Alex Langdon's profile on LinkedIn">
+          
+    </a>
+  </content>
+</md-card>
+
+<md-card class="main-content-wrap">
+  <img md-card-image src="../assets/images/header.JPG">
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" 
+    data-theme="light" data-vanity="alex-langdon-82b628a5">
+    <a class="LI-simple-link" href='https://uk.linkedin.com/in/alex-langdon-82b628a5?trk=profile-badge'>
+      Alex Langdon
     </a>
   </div>
 </md-card>
-<md-card class="main-content-wrap">
-  <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" 
-    data-type="vertical" data-theme="light" data-vanity="alex-langdon-82b628a5">
-    <a class="LI-simple-link" href='https://uk.linkedin.com/in/alex-langdon-82b628a5?trk=profile-badge'>
-    Alex Langdon
-    </a>
-  </div>
+
+<md-card class="footer">
+  <content class="footer-content">
+    email: a.langdon.mail<img class="at-symbol" src="../assets/images/at_black.gif" alt="at">gmail.com <br>
+    made with <img src="../assets/images/angular.svg" class="footer-icon" alt="Angular icon">
+    <img src="../assets/images/GitHub-Mark-64px.png" class="footer-icon github-icon" alt="Github icon">
+  </content>
 </md-card>
