@@ -1,0 +1,48 @@
+.bg {
+    top: 0;
+    left: 0;
+    background-image: url("../assets/escher_small.png");
+    height: 1000px;
+    width: 100%;
+    opacity: 0.6;
+    z-index: 0;
+    position: fixed;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.nav-banner {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 12px 24px;
+    z-index: 2;
+}
+
+.nav-banner-content {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-content-wrap {
+    margin-top: 100px;
+    width: 750px;
+    height: 750px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+md-icon {
+    margin-left: 5px;
+}
+
+.linked-in-button {
+    
+}

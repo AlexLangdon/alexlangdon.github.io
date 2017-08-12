@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@include mat-core();
+
+$primary: mat-palette($mat-grey);
+$accent: mat-palette($mat-blue);
+$warn: mat-palette($mat-red);
+$theme: mat-light-theme($primary,$accent,$warn);
+@include angular-material-theme($theme);
+
+* {
+    font-family: "Roboto-Regular";
+}
+
