@@ -2,7 +2,7 @@
 <div class="bg">
 </div>
 <md-card class="header">
-  <content class="header-content">
+  <md-card-content class="header-content">
     <img class="logo" src="../assets/images/logo.png">
     <button md-raised-button>
       Home
@@ -23,26 +23,46 @@
     <a md-button href="http://uk.linkedin.com/pub/alex-langdon/a5/628/82b">
       <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" 
           class="linked-in-button" alt="View Alex Langdon's profile on LinkedIn">
-          
     </a>
-  </content>
+  </md-card-content>
 </md-card>
 
 <md-card class="main-content-wrap">
-  <img md-card-image src="../assets/images/header.JPG">
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" 
+  <div class="title-wrapper">
+    <img md-card-image class="title-img" src="../assets/images/header.jpg">
+    <div class="title-text">
+      <span>Alex Langdon</span>
+      <hr class="cool_hr">
+      <span>Front-end, Web and Mobile Application Developer</span>
+    </div>
+  </div>
+  <!--<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" 
     data-theme="light" data-vanity="alex-langdon-82b628a5">
     <a class="LI-simple-link" href='https://uk.linkedin.com/in/alex-langdon-82b628a5?trk=profile-badge'>
       Alex Langdon
     </a>
-  </div>
+  </div>-->
+  <md-card class="intro-card">
+    <img md-card-avatar md-card-lg-image align="left" class="avatar">
+    <md-card-title>
+     <md-icon class="card-title-icon">account_circle</md-icon> About Me 
+    </md-card-title>
+    <hr>
+    <md-card-content>
+      I am Computer Science graduate from Warwick University. <br>
+      During my Master’s year my academic focus was in deep learning, data mining 
+      and image analysis. <br>
+      Currently I am interested in making responsive Angular 2 web applications. 
+      I have also designed apps and 2D/3D games for Android and the web. 
+      In my free time I enjoy playing guitar and making digital environment art.
+    </md-card-content>
+  </md-card>
 </md-card>
 
 <md-card class="footer">
   <content class="footer-content">
     email: a.langdon.mail<img class="at-symbol" src="../assets/images/at_black.gif" alt="at">gmail.com <br>
-    made with <img src="../assets/images/angular.svg" class="footer-icon" alt="Angular icon">
-    <img src="../assets/images/GitHub-Mark-64px.png" class="footer-icon github-icon" alt="Github icon">
+    made with <img src="../assets/images/angular.svg" class="footer-icon" title="Angular 2" alt="Angular icon">
+    <img src="../assets/images/GitHub-Mark-64px.png" class="footer-icon github-icon" title="Github pages" alt="Github icon">
   </content>
 </md-card>
