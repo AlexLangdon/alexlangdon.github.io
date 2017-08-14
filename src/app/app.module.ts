@@ -6,14 +6,17 @@ import { MdCardModule,
          MaterialModule,
          MdIconModule,
          MdGridListModule,
-         MdListModule } from '@angular/material';
+         MdListModule,
+         MdToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { ProjectCard } from '../project-card/project-card.component';
 import 'hammerjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectCard
   ],
   imports: [
     BrowserModule,

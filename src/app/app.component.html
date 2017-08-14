@@ -9,16 +9,16 @@
       <md-icon>home</md-icon>
     </button>
     <button md-raised-button>
-      Projects
-      <md-icon>build</md-icon>
-    </button>
-    <button md-raised-button>
       Academic
       <md-icon>school</md-icon>
     </button>
     <button md-raised-button>
+      Projects
+      <md-icon>build</md-icon>
+    </button>
+    <button md-raised-button>
       CV
-      <md-icon>description</md-icon>
+    <md-icon>description</md-icon>
     </button>
     <a md-button href="http://uk.linkedin.com/pub/alex-langdon/a5/628/82b">
       <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" 
@@ -57,7 +57,7 @@
       In my free time I enjoy playing guitar and making digital environment art.
     </md-card-content>
   </md-card>
-  <md-grid-list cols="3" class="columns-grid" rowHeight="fit">
+  <md-grid-list cols="3" class="columns-grid" rowHeight="fit" gutter="10px">
     <md-grid-tile>
       <md-card>
         <md-card-title>
@@ -106,6 +106,16 @@
           </md-list>
         </md-card-content>
       </md-card>
+    </md-grid-tile>
+  </md-grid-list>
+    <md-grid-list cols="3" rowHeight="350px" class="projects-grid" gutter="10px">
+    <md-grid-tile *ngFor="let project of academicProjects">
+      <project-card [project]="project"></project-card>
+    </md-grid-tile>
+  </md-grid-list>
+  <md-grid-list cols="3" rowHeight="350px" class="projects-grid" gutter="10px">
+    <md-grid-tile *ngFor="let project of personalProjects">
+      <project-card [project]="project"></project-card>
     </md-grid-tile>
   </md-grid-list>
 </md-card>

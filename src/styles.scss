@@ -8,8 +8,3 @@ $accent: mat-palette($mat-blue);
 $warn: mat-palette($mat-red);
 $theme: mat-light-theme($primary,$accent,$warn);
 @include angular-material-theme($theme);
-
-* {
-    font-family: "Roboto-Regular";
-}
-
