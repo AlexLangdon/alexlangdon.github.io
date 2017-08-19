@@ -9,9 +9,8 @@ import { MdCardModule,
          MdListModule,
          MdToolbarModule } from '@angular/material';
 
-import { AppComponent } from './app.component';
 import { ProjectCard } from '../project-card/project-card.component';
-import 'hammerjs';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -31,4 +30,4 @@ import 'hammerjs';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

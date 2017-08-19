@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { ProjectCard } from '../project-card/project-card.component';
 import { ProjectModel } from '../project-card/project.model';
 
-const projectImgs = '../assets/images/projects/';
-const projectVids = '../assets/vids';
+const projectImgs = './assets/images/projects/';
+const projectVids = './assets/vids';
 
 @Component({
   selector: 'app-root',
@@ -35,7 +35,7 @@ export class AppComponent {
       projectImgs + 'Robocode/Robocode3.png',
       projectImgs + 'Robocode/Robocode4.png']),
     new ProjectModel(
-      `IOU Web Payment Manager`,
+      `Web Payment Manager`,
       'HTML CSS PHP JS SQL',
       `The project was developed as an online, account based payment management system.
       Users could send and complete payment requests, while setting deadlines,

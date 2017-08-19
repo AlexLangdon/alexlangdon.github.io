@@ -1,22 +1,19 @@
  <!--Background pattern from Subtle Patterns -->
+<div>
 <div class="bg">
 </div>
 <md-card class="header">
   <md-card-content class="header-content">
-    <img class="logo" src="../assets/images/logo.png">
+    <img class="logo" src="./assets/images/logo.png">
     <button md-raised-button>
       Home
       <md-icon>home</md-icon>
     </button>
     <button md-raised-button>
-      Academic
-      <md-icon>school</md-icon>
-    </button>
-    <button md-raised-button>
       Projects
       <md-icon>build</md-icon>
     </button>
-    <a md-raised-button href="../assets/AlexLangdonResumeWeb.pdf">
+    <a md-raised-button href="./assets/AlexLangdonResumeWeb.pdf">
       CV
       <md-icon>description</md-icon>
     </a>
@@ -29,19 +26,13 @@
 
 <md-card class="main-content-wrap">
   <div class="title-wrapper">
-    <img md-card-image class="title-img" src="../assets/images/header.jpg">
+    <img md-card-image class="title-img" src="./assets/images/header.JPG">
     <div class="title-text">
       <span>Alex Langdon</span>
       <hr class="cool_hr">
       <span>Front-end, Web and Mobile Application Developer</span>
     </div>
   </div>
-  <!--<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" 
-    data-theme="light" data-vanity="alex-langdon-82b628a5">
-    <a class="LI-simple-link" href='https://uk.linkedin.com/in/alex-langdon-82b628a5?trk=profile-badge'>
-      Alex Langdon
-    </a>
-  </div>-->
   <md-card class="intro-card">
     <img md-card-avatar md-card-lg-image align="left" class="avatar">
     <md-card-title>
@@ -108,12 +99,12 @@
       </md-card>
     </md-grid-tile>
   </md-grid-list>
-    <md-grid-list cols="3" rowHeight="350px" class="projects-grid" gutter="10px">
+    <md-grid-list cols="3" rowHeight="370px" class="projects-grid" gutter="10px">
     <md-grid-tile *ngFor="let project of academicProjects">
       <project-card [project]="project"></project-card>
     </md-grid-tile>
   </md-grid-list>
-  <md-grid-list cols="3" rowHeight="350px" class="projects-grid" gutter="10px">
+  <md-grid-list cols="3" rowHeight="370px" class="projects-grid" gutter="10px">
     <md-grid-tile *ngFor="let project of personalProjects">
       <project-card [project]="project"></project-card>
     </md-grid-tile>
@@ -121,8 +112,9 @@
 </md-card>
 <md-card class="footer">
   <content class="footer-content">
-    email: a.langdon.mail<img class="at-symbol" src="../assets/images/at_black.gif" alt="at">gmail.com <br>
-    made with <img src="../assets/images/angular.svg" class="footer-icon" title="Angular 2" alt="Angular icon">
-    <img src="../assets/images/GitHub-Mark-64px.png" class="footer-icon github-icon" title="Github pages" alt="Github icon">
+    email: a.langdon.mail<img class="at-symbol" src="./assets/images/at_black.gif" alt="at">gmail.com <br>
+    made with <img src="./assets/images/angular.svg" class="footer-icon" title="Angular 2" alt="Angular icon">
+    <img src="./assets/images/GitHub-Mark-64px.png" class="footer-icon github-icon" title="Github pages" alt="Github icon">
   </content>
 </md-card>
+</div>
