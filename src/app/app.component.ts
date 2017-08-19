@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ProjectCard } from '../project-card/project-card.component';
-import { ProjectModel } from '../project-card/project.model';
+import { ProjectCard } from '../project/project-card/project-card.component';
+import { ProjectModel } from '../project/project.model';
 
-const projectImgs = './assets/images/projects/';
-const projectVids = './assets/vids';
+const projectImgs = '../assets/images/projects/';
+const projectVids = '../assets/vids';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ const projectVids = './assets/vids';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  // TODO Move this to a separate object
   public academicProjects = [
     new ProjectModel(
       `Rubik's Cube Solver`,
@@ -19,8 +20,8 @@ export class AppComponent {
       computer vision and optimal solving algorithms. The final solution used a
       webcam to detect the cube contours via Canny edge and corner tracking.
       It could also estimate the position of any occluded pieces before clustering
-      the colours and building a 3D model. The solver had to traverse a space of 4.3×10<sup>19</sup>
-      distinct combinations to find the unique solution. This required a specialised A* search
+      the colours and building a 3D model. The solver had to traverse a space of over 43 quntillion
+      (4.3×10^19) combinations to find the unique solution. This required a specialised A* search
       method with pre-generated generated databases.`,
       [projectImgs + 'Cube/Cube1.png']),
     new ProjectModel(
@@ -73,7 +74,7 @@ export class AppComponent {
       'Java',
       `Platform: PC
       Astro was intended to be a simple clone of a retro style space shooter.
-      The project ultimately built on the basic design with some extra features like heat and component managemen. 
+      The project ultimately built on the basic design with some extra features like heat and component managemen.
       While mainly used as a way to learn Java, the project also introduced me to sprite, GUI and animation generation.`,
       [projectImgs + 'Astro/Astro1.png',
       projectImgs + 'Astro/Astro2.png',
@@ -82,9 +83,9 @@ export class AppComponent {
     new ProjectModel(
       'OCR ICT Guide',
       'Matchware Mediator',
-      `Platform: PC
+      `Platform: PC \n\n
       An interactive revision CD co-developed for the Forest School IT department.
-      The final product is now being sold to GCSE IT students as a supplement to exam preparation.`,
+      The final product supplemented the exam preparation for GCSE IT students.`,
       [projectImgs + 'OCR/OCR1.png',
       projectImgs + 'OCR/OCR2.png',
       projectImgs + 'OCR/OCR3.png',

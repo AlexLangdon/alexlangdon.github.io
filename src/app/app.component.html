@@ -5,14 +5,14 @@
 <md-card class="header">
   <md-card-content class="header-content">
     <img class="logo" src="./assets/images/logo.png">
-    <button md-raised-button>
+    <a md-raised-button [routerLink]="['homeAnchor']">
       Home
       <md-icon>home</md-icon>
-    </button>
-    <button md-raised-button>
+    </a>
+    <a md-raised-button [routerLink]="['projectsAnchor']">
       Projects
       <md-icon>build</md-icon>
-    </button>
+    </a>
     <a md-raised-button href="./assets/AlexLangdonResumeWeb.pdf">
       CV
       <md-icon>description</md-icon>

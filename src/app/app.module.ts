@@ -7,15 +7,18 @@ import { MdCardModule,
          MdIconModule,
          MdGridListModule,
          MdListModule,
-         MdToolbarModule } from '@angular/material';
+         MdToolbarModule,
+         MdDialogModule } from '@angular/material';
 
-import { ProjectCard } from '../project-card/project-card.component';
 import { AppComponent } from './app.component';
+import { ProjectCard } from '../project/project-card/project-card.component';
+import { ProjectDetail } from '../project/project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectCard
+    ProjectCard,
+    ProjectDetail
   ],
   imports: [
     BrowserModule,
@@ -25,9 +28,13 @@ import { AppComponent } from './app.component';
     MaterialModule,
     MdIconModule,
     MdGridListModule,
-    MdListModule
+    MdListModule,
+    MdDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ProjectDetail
+  ]
 })
 export class AppModule {}
