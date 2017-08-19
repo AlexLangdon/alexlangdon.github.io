@@ -4,6 +4,10 @@ md-card {
     min-height: 300px;
 }
 
+md-card-header {
+    position: relative;
+}
+
 md-card-title {
     font-size: 28px !important;
 }
@@ -31,7 +35,26 @@ md-card-content {
 
 .image-gallery {
     display: flex;
-    height: 300px;
     width: 300px;
+    height: 300px;
     margin: 0 auto 16px auto;
+}
+
+.carousel-button {
+    position: relative;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto 0 auto 0;
+}
+
+.carousel-button md-icon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+}
+
+.left-button {
+    margin-left: -24px;
 }

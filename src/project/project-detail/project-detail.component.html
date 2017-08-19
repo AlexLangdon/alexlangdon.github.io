@@ -1,11 +1,13 @@
 <md-card>
   <button class="close-button" md-icon-button md-dialog-close><md-icon>close</md-icon></button>
-  <img md-card-image src="{{data.mediaUrls[0]}}" class="image-gallery">
   <md-card-header>
-      <md-card-title>{{data.title}}</md-card-title>
-      <md-card-subtitle>{{data.subtitle}}</md-card-subtitle>
+  <button md-icon-button class="carousel-button left-button"><md-icon>chevron_left</md-icon></button>
+  <img md-card-image src="{{data.mediaUrls[0]}}" class="image-gallery">
+  <button md-icon-button class="carousel-button right-button"><md-icon>chevron_right</md-icon></button>
   </md-card-header>
   <md-card-content>
+    <md-card-title>{{data.title}}</md-card-title>
+    <md-card-subtitle>{{data.subtitle}}</md-card-subtitle>
     <p>
       {{data.description}}
     </p>
