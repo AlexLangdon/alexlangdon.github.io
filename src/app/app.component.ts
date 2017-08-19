@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectCard } from '../project/project-card/project-card.component';
 import { ProjectModel } from '../project/project.model';
+import { PageScrollConfig } from 'ng2-page-scroll';
 
 const projectImgs = '../assets/images/projects/';
 const projectVids = '../assets/vids';
@@ -51,7 +52,7 @@ export class AppComponent {
       'Rotate',
       'Unity C#',
       `Platform: PC Web
-      Rotate is a 3D gravity puzzle game developed during a 48h Warwick Game Design Hackathon.
+      Rotate is a 3D gravity puzzle game developed during a 48 hour Warwick Game Design Hackathon.
       The goal is to connect two cubes by rotating the player camera to change the gravity. The game features
       highscores and 8 levels of increasing skill.`,
       [projectImgs + 'Rotate/Rotate1.png',
@@ -91,4 +92,9 @@ export class AppComponent {
       projectImgs + 'OCR/OCR3.png',
       projectImgs + 'OCR/OCR4.png']),
   ];
+
+  constructor() {
+    PageScrollConfig.defaultScrollOffset = 100;
+    PageScrollConfig.defaultDuration = 700;
+  }
 }

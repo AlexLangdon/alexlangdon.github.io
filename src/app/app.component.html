@@ -5,11 +5,11 @@
 <md-card class="header">
   <md-card-content class="header-content">
     <img class="logo" src="./assets/images/logo.png">
-    <a md-raised-button [routerLink]="['homeAnchor']">
+    <a md-raised-button pageScroll href="#home">
       Home
       <md-icon>home</md-icon>
     </a>
-    <a md-raised-button [routerLink]="['projectsAnchor']">
+    <a md-raised-button pageScroll href="#projects">
       Projects
       <md-icon>build</md-icon>
     </a>
@@ -23,8 +23,7 @@
     </a>
   </md-card-content>
 </md-card>
-
-<md-card class="main-content-wrap">
+<md-card class="main-content-wrap" id="home">
   <div class="title-wrapper">
     <img md-card-image class="title-img" src="./assets/images/header.JPG">
     <div class="title-text">
@@ -99,7 +98,7 @@
       </md-card>
     </md-grid-tile>
   </md-grid-list>
-    <md-grid-list cols="3" rowHeight="370px" class="projects-grid" gutter="10px">
+  <md-grid-list id="projects" cols="3" rowHeight="370px" class="projects-grid" gutter="10px">
     <md-grid-tile *ngFor="let project of academicProjects">
       <project-card [project]="project"></project-card>
     </md-grid-tile>

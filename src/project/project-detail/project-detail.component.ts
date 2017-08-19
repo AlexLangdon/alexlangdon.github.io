@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { ProjectModel } from '../project.model';
-import { MD_DIALOG_DATA } from '@angular/material';
+import { MD_DIALOG_DATA, MdDialog } from '@angular/material';
 
 @Component({
   selector: 'app-project-detail',
