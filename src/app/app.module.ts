@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdCardModule,
          MdButtonModule,
@@ -15,6 +14,7 @@ import { AppComponent } from './app.component';
 import { ProjectCard } from '../project/project-card/project-card.component';
 import { ProjectDetail } from '../project/project-detail/project-detail.component';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
+import { SwiperModule } from '../../node_modules/angular2-useful-swiper';
 
 @NgModule({
   declarations: [
@@ -32,9 +32,8 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
     MdGridListModule,
     MdListModule,
     MdDialogModule,
-    // TODO No router is needed for one page app
-    RouterModule.forRoot([{ path: '', component: AppComponent}]),
-    Ng2PageScrollModule
+    Ng2PageScrollModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent],

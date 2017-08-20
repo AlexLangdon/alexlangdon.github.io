@@ -34,8 +34,7 @@ export class AppComponent {
       by analysing the statistical correlations in opponent's preferred movement and position.`,
       [projectImgs + 'Robocode/Robocode1.png',
       projectImgs + 'Robocode/Robocode2.png',
-      projectImgs + 'Robocode/Robocode3.png',
-      projectImgs + 'Robocode/Robocode4.png']),
+      projectImgs + 'Robocode/Robocode3.png']),
     new ProjectModel(
       `Web Payment Manager`,
       'HTML CSS PHP JS SQL',
@@ -79,8 +78,7 @@ export class AppComponent {
       While mainly used as a way to learn Java, the project also introduced me to sprite, GUI and animation generation.`,
       [projectImgs + 'Astro/Astro1.png',
       projectImgs + 'Astro/Astro2.png',
-      projectImgs + 'Astro/Astro3.png',
-      projectImgs + 'Astro/Astro4.png']),
+      projectImgs + 'Astro/Astro3.png']),
     new ProjectModel(
       'OCR ICT Guide',
       'Matchware Mediator',

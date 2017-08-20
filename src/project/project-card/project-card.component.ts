@@ -15,7 +15,6 @@ export class ProjectCard {
   constructor(public dialog: MdDialog) {}
 
   showProjectDetails() {
-    console.log(this.project);
     this.dialog.open(ProjectDetail, {
       data: this.project
     });

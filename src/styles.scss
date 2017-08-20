@@ -3,8 +3,12 @@
 
 @include mat-core();
 
-$primary: mat-palette($mat-grey);
-$accent: mat-palette($mat-blue);
+$primary: mat-palette($mat-blue, 200);
+$accent: mat-palette($mat-grey);
 $warn: mat-palette($mat-red);
 $theme: mat-light-theme($primary,$accent,$warn);
 @include angular-material-theme($theme);
+
+.swiper-pagination-bullet {
+    margin: 5px;
+}

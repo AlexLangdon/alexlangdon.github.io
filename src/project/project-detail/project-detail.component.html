@@ -1,9 +1,14 @@
 <md-card>
   <button class="close-button" md-icon-button md-dialog-close><md-icon>close</md-icon></button>
   <md-card-header>
-  <button md-icon-button class="carousel-button left-button"><md-icon>chevron_left</md-icon></button>
-  <img md-card-image src="{{data.mediaUrls[0]}}" class="image-gallery">
-  <button md-icon-button class="carousel-button right-button"><md-icon>chevron_right</md-icon></button>
+    <button md-icon-button class="carousel-button prev-button" (click)="prevMedia()"><md-icon>chevron_left</md-icon></button>
+    <swiper [config]="config">
+      <div class="swiper-wrapper">
+        <img md-card-image class="swiper-slide" *ngFor="let url of data.mediaUrls" [src]="url">
+      </div>
+    </swiper>
+    <button md-icon-button class="carousel-button next-button" (click)="nextMedia()"><md-icon>chevron_right</md-icon></button>
+    <div class="swiper-pagination"></div>
   </md-card-header>
   <md-card-content>
     <md-card-title>{{data.title}}</md-card-title>
