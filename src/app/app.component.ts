@@ -3,8 +3,8 @@ import { ProjectCard } from '../project/project-card/project-card.component';
 import { ProjectModel } from '../project/project.model';
 import { PageScrollConfig } from 'ng2-page-scroll';
 
-const projectImgs = '../assets/images/projects/';
-const projectVids = '../assets/vids';
+const projectImgs = './assets/images/projects/';
+const projectVids = './assets/vids';
 
 @Component({
   selector: 'app-root',
