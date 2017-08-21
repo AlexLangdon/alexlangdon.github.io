@@ -17,4 +17,7 @@
       {{data.description}}
     </p>
   </md-card-content>
+  <md-card-actions *ngIf="data.links !== undefined">
+    <a md-raised-button *ngFor="let link of data.links" href="{{link.url}}">{{link.label}}</a>
+  </md-card-actions>
 </md-card>

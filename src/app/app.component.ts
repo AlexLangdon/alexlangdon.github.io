@@ -21,7 +21,7 @@ export class AppComponent {
       computer vision and optimal solving algorithms. The final solution used a
       webcam to detect the cube contours via Canny edge and corner tracking.
       It could also estimate the position of any occluded pieces before clustering
-      the colours and building a 3D model. The solver had to traverse a space of over 43 quntillion
+      the colours and building a 3D model. The solver had to traverse a space of over 43 quintillion
       (4.3×10^19) combinations to find the unique solution. This required a specialised A* search
       method with pre-generated generated databases.`,
       [projectImgs + 'Cube/Cube1.png']),
@@ -68,7 +68,8 @@ export class AppComponent {
       [projectImgs + 'Arcs/Arcs1.png',
       projectImgs + 'Arcs/Arcs2.png',
       projectImgs + 'Arcs/Arcs3.png',
-      projectImgs + 'Arcs/Arcs4.png']),
+      projectImgs + 'Arcs/Arcs4.png'],
+      [{label: 'Play Store page', url: 'https://play.google.com/store/apps/details?id=com.AlexLangdon.Arcs&hl=en_GB'}]),
     new ProjectModel(
       'Orbit',
       'Java',
