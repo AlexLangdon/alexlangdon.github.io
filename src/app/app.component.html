@@ -99,12 +99,7 @@
     </md-grid-tile>
   </md-grid-list>
   <md-grid-list id="projects" cols="3" rowHeight="370px" class="projects-grid" gutter="10px">
-    <md-grid-tile *ngFor="let project of academicProjects">
-      <project-card [project]="project"></project-card>
-    </md-grid-tile>
-  </md-grid-list>
-  <md-grid-list cols="3" rowHeight="370px" class="projects-grid" gutter="10px">
-    <md-grid-tile *ngFor="let project of personalProjects">
+    <md-grid-tile *ngFor="let project of projects">
       <project-card [project]="project"></project-card>
     </md-grid-tile>
   </md-grid-list>

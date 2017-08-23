@@ -37,8 +37,6 @@ import { SwiperModule } from '../../node_modules/angular2-useful-swiper';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [
-    ProjectDetail
-  ]
+  entryComponents: [ProjectDetail]
 })
 export class AppModule {}

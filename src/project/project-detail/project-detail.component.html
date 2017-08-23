@@ -4,7 +4,11 @@
     <button md-icon-button class="carousel-button prev-button" (click)="prevMedia()"><md-icon>chevron_left</md-icon></button>
     <swiper [config]="config">
       <div class="swiper-wrapper">
-        <img md-card-image class="swiper-slide" *ngFor="let url of data.mediaUrls" [src]="url">
+        <video class="swiper-slide" *ngIf="data.videoUrl" controls>
+          <source src="{{data.videoUrl}}" type="video/mp4">
+            Your browser does not support this video.
+        </video>
+        <img md-card-image class="swiper-slide" *ngFor="let url of data.imageUrls" [src]="url">
       </div>
     </swiper>
     <button md-icon-button class="carousel-button next-button" (click)="nextMedia()"><md-icon>chevron_right</md-icon></button>

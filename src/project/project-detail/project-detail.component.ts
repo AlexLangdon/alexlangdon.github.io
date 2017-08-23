@@ -18,17 +18,21 @@ export class ProjectDetail {
     autoplay: 5000
   };
 
-  constructor(@Inject(MD_DIALOG_DATA) public data: ProjectModel) {}
+  constructor(@Inject(MD_DIALOG_DATA) public data: ProjectModel) {
+    if (this.data.videoUrl) {
+      this.config.autoplay = undefined;
+    }
+  }
 
   get currentMedia() {
     return this._currentMedia;
   }
 
   nextMedia() {
-    this._currentMedia = (this._currentMedia + 1) % this.data.mediaUrls.length;
+    this._currentMedia = (this._currentMedia + 1) % this.data.imageUrls.length;
   }
 
   prevMedia() {
-    this._currentMedia = this._currentMedia === 0 ? this.data.mediaUrls.length - 1 : this._currentMedia - 1;
+    this._currentMedia = this._currentMedia === 0 ? this.data.imageUrls.length - 1 : this._currentMedia - 1;
   }
 }
