@@ -4,6 +4,19 @@ const projectImgs = './assets/images/projects/';
 const projectVids = './assets/vids/';
 export const projects = [
     new ProjectModel(
+      `Boards Note App`,
+      'Typescript JS Angular SQL',
+      `A note-taking web app made with Angular 4, Express, SQL and Material design libraries.
+      Can add tags to notes and categorise them into boards. Can apply a filter to only show
+      notes with certain tags/boards. Includes standard create, read, update, delete operations
+      for notes as well as a drag and drop interface.`,
+      [projectImgs + 'Boards/Boards1.png',
+      projectImgs + 'Boards/Boards2.png',
+      projectImgs + 'Boards/Boards3.png',
+      projectImgs + 'Boards/Boards4.png'],
+      undefined,
+      [{label: 'Github page', url: 'https://github.com/AlexLangdon/Boards'}]),
+    new ProjectModel(
       `Rubik's Cube Solver`,
       'C++',
       `The aim of the project was to detect and solve any 3x3 Rubik's cube through

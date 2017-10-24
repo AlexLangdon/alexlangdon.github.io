@@ -74,12 +74,11 @@ hr {
 .title-img {
     opacity: 0.9;
     width: 736px;
-    height: 264px;
 }
 
 .title-text {
     position: absolute;
-    top: 190px;
+    top: 117px;
     z-index: 2;
     color: white;
     width: 100%;
@@ -144,11 +143,19 @@ hr {
     width: 12px;
 }
 
+.github-icon {
+    height: 24px;
+}
+
 .footer-icon {
     height: 50px;
     vertical-align: middle;
 }
 
-.github-icon {
+.footer-icon.github-icon {
     height: 40px;
+}
+
+.icon-link {
+    text-decoration: none;
 }
